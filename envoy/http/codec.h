@@ -36,9 +36,9 @@ struct CodecStats;
 }
 
 // Legacy default value of 60K is safely under both codec default limits.
-static constexpr uint32_t DEFAULT_MAX_REQUEST_HEADERS_KB = 80;
+static constexpr uint32_t DEFAULT_MAX_REQUEST_HEADERS_KB = 256;
 // Default maximum number of headers.
-static constexpr uint32_t DEFAULT_MAX_HEADERS_COUNT = 200;
+static constexpr uint32_t DEFAULT_MAX_HEADERS_COUNT = 300;
 
 const char MaxRequestHeadersCountOverrideKey[] =
     "envoy.reloadable_features.max_request_headers_count";
